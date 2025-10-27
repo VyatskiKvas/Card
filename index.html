@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Открытка</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/favicon.ico" />
+  </head>
+  <body>
+    <h1>Привет, ты мне нравишься&#41;</h1>
+    <div class="main_kitten">
+      <img
+        id="kitten"
+        src="images/kitten.png"
+        alt="Подожди/перезагрузи/поплачь"
+      />
+    </div>
+
+    <div class="options">
+      <button class="yes" id="yes_button">И ты мне)</button>
+      <button class="no" id="no_button">🤢</button>
+    </div>
+
+    <div class="after_yes" id="after_yes_img">
+      <video controls autoplay muted loop>
+        <source src="vlipsy-cats-dj-kitty-6S9IEs24.mp4" type="video/mp4" />
+      </video>
+      <p>Ура, идем на свидание</p>
+    </div>
+
+    <div class="after_no" id="after_no_img">
+      <video controls autoplay muted loop>
+        <source
+          src="vlipsy-little-kid-dancing-in-the-club-uXz5Vl6N.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <p>Я пошутила, теряйся, позорник</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

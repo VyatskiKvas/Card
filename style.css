@@ -1,0 +1,72 @@
+body {
+  display: flex; /* флексим */
+  flex-direction: column; /* сверху вниз элементы, а по умолчанию(row) было бы в ряд */
+  justify-content: center; /* центруем по вертикали */
+  align-items: center; /* центруем по горизонтали */
+  height: 100vh; /*высота элемента=100% высоты окна браузера*/
+  margin: 0; /* это чтоб не было отступов-белых полосок */
+  font-family: Arial, sans-serif; /* шрифт */
+  text-align: center; /* центруем но строго для строк/текста */
+  background-color: #fff; /* цвет фона элементов */
+}
+
+h1 {
+  margin-bottom: 20px; /* я устала писать комментарии, дальше все интуитивно понятно */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(220, 28, 153);
+}
+
+.main_kitten {
+  max-width: 50%;
+  height: auto;
+  display: inline-block;
+  margin-bottom: 20px; /* Отступ снизу 40px */
+  margin-top: 20px;
+}
+
+.yes,
+.no {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px 5px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer; /* поменять вид курсора при наведении */
+  transition: all 0.3s ease;
+  font-weight: bold;
+  width: 120px;
+  height: 50px;
+  justify-content: center;
+}
+
+.no {
+  font-size: 28px;
+}
+.yes {
+  color: rgb(220, 28, 153);
+
+  font-size: 18px;
+}
+
+.options {
+  display: flex; /* Размещаем кнопки в ряд */
+  gap: 20px; /* Расстояние между кнопками */
+  align-items: center; /* Выравниваем по вертикали */
+  justify-content: center; /* Центрируем по горизонтали */
+}
+
+.after_yes,
+.after_no {
+  display: none;
+  text-align: center;
+  margin-top: 30px;
+}
+.after_yes.show,
+.after_no.show {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+.main_kitten.hide,
+.options.hide,
+h1.hide {
+  display: none;
+}
